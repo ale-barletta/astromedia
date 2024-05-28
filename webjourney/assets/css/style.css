@@ -1,0 +1,152 @@
+:root {
+    --dark: #2D2D2D;
+    --dark-blue: #3366ff;
+    --light-blue: #50c0ff;
+    --darker-blue: #151328;
+    --white: #F8F9FF;
+    --light: #E5F4F2;
+    --whiter: #FFFFFF;
+    --grey: #bababa;
+    --darker-grey: #454545;
+
+    --darker-blue-opacity: #192a3662;
+    
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--darker-blue);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+    cursor: pointer;
+  }
+
+main {
+    background-color: var(--white);
+}
+.hero-title {
+    font-family: 'Poppins';
+    font-weight: 800;
+    color: var(--whiter);
+    font-size: 3em;
+    line-height: 1.3em;
+    letter-spacing: -.25;
+    margin-top: -.15em;
+    
+}
+
+.section-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 2em;
+    line-height: 1.3em;
+    letter-spacing: -.25;
+}
+
+.section-title#blue {
+    color: var(--light-blue);
+}
+
+.section-title#light {
+    color: var(--whiter);
+}
+
+.section-subtitle {
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: var(--dark);
+    font-size: 1.5em;
+    line-height: 1.3em;
+    letter-spacing: -.25;
+}
+.section-paragraph {
+    font-family: 'Mulish';
+    font-weight: 300;
+    color: var(--darker-grey);
+    font-size: 1.3em;
+    line-height: 1.5em;
+   
+}
+
+
+.section-paragraph#light {
+    font-family: 'Mulish';
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 1.3em;
+    line-height: 1.5em;
+   
+}
+.hero-button-link {
+    background-color: var(--dark-blue);
+    color: var(--whiter);
+    padding: 1.5em;
+    border-radius: 1em;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: .75em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+ 
+}
+
+.hero-button-link#light {
+    background-color: transparent;
+    color: var(--grey);
+    padding: 1.5em;
+    border-radius: 1em;
+    border: 1px solid var(--grey);
+}
+
+.hero-button-link#blue {
+    background-color: var(--dark-blue);
+    padding: 1.75em;
+    border-radius: 1em;
+  
+}
+.hero-button {
+    color: inherit;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 600px) {
+
+.hero-title {
+    font-size: 4em;
+}
+
+.section-title {
+    font-size: 2.35em;
+}
+
+.hero-button-link {
+    font-size: 1em;
+}
+
+}

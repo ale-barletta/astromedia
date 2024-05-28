@@ -1,0 +1,162 @@
+.contact {
+    width: 100%;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.contact-box {
+    background-color: var(--darker-blue);
+    padding: 2em 2em;
+    -webkit-box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.19);
+    -moz-box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.19);
+    box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.19);
+    border-radius: 2em;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#canvas3d {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--darker-blue);
+}
+
+.form-area {
+    width: 100%;
+}
+
+.contact-box .section-title, .contact-box .section-paragraph, .contact-box i {
+    color: white;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5em;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.input-box {
+    border: solid 1px var(--grey);
+    border-radius: 1em;
+    padding: 1em 1em;
+    width: calc(100% - 2em);
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    align-items: center;
+}
+
+.input-box i {
+    font-size: 1.2em;
+    color: white;
+}
+
+vl {
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 100%;
+    padding: 0 .5em;
+  }
+
+#contactForm input  {
+   border: none;
+   font-family: 'Mulish', sans-serif;
+   background-color: transparent;
+
+
+
+
+}
+
+#contactForm textarea {
+    min-height: 250px;
+}
+
+
+
+
+
+
+
+#contactForm button {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: .75em;
+    padding: 1em;
+    margin-top: .5em;
+    width: 30%;
+}
+
+
+.info-area {
+    width: 100%;
+    margin-top: 1em;
+    
+}
+
+.info-box {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: .5em 0;
+
+}
+
+.info-box i {
+    font-size: 1.25em;
+}
+
+
+@media (min-width: 900px) {
+
+    .contact-box {
+        padding: 3em 5em;
+        max-width: 40%;
+        left: 30%;
+    }
+
+    .contact-area {
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+    }
+
+    .contact-box p {
+        max-width: 550px;
+        font-size: 1em;
+    }
+
+    .form-area { 
+        width: 100%;
+    }
+    
+    .info-area {
+        margin-top: 0;
+        gap: .1em;
+    }
+
+    .info-box {
+        padding: 0 0;
+    }
+
+
+}
+
+

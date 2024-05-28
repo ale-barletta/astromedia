@@ -1,0 +1,135 @@
+.servicos {
+    padding: 1em 0;
+    text-align: center;
+    
+}
+
+.servicos .section-title {
+    margin: 0 auto;
+}
+
+.servicos-content {
+    display: flex;
+    gap: 1.75em;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.servicos-box {
+    background-color: var(--whiter);
+    padding: 3em 1em;
+    width: 90%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 auto;
+    border-radius: 1em;
+    -webkit-box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.19);
+    -moz-box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.19);
+    box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.19);
+}
+
+.servicos-box-header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1em;
+}
+
+.servicos-box-icon {
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 1.5em;
+    padding: .5em;
+    border-radius: .2em;
+}
+
+.servicos-box-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.servicos-box-text p {
+    font-size: 1em;
+}
+.servicos-box-link {
+    color: var(--darker-grey);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+
+@media (min-width: 800px) {
+
+    .servicos{
+        padding: 4em 0;
+
+    }
+    .servicos-content {
+        display: flex;
+        gap: 1em;
+        flex-direction: row;
+        margin-top: 2em;
+        flex-wrap: wrap;
+    }
+    
+    .servicos-box {
+        background-color: var(--whiter);
+        padding: 3em 1em;
+        width: calc(33% - 2.5em);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 0 auto;
+        border-radius: 1em;
+      
+        -webkit-box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.09);
+        -moz-box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.09);
+        box-shadow: -1px 6px 73px -25px rgba(0,0,0,0.09);
+    }
+
+    .servicos-box-header {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 1em;
+        flex-direction: column;
+    }
+    
+    .servicos-box-icon {
+        background-color: var(--dark-blue);
+        color: white;
+        font-size: 2em;
+        padding: .5em;
+        border-radius: .2em;
+    }
+    
+    .servicos-box-text {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        text-align: center;
+        min-height: 210px;
+        justify-content: space-around;
+
+    }
+    
+    .servicos-box-link {
+        color: var(--darker-grey);
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+
+    .servicos-box-link:hover {
+    
+        transform: scale(1.1) scaleY(1.1);
+    }
+
+}
